@@ -3,6 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage{hyperref}
 \usepackage{enumerate}
+\usepackage{amssymb, amsmath, amsbsy}
 \usepackage{sectsty} %Este paquete se usa para poder cambiar el tamaño de las letras de los encabezados, y que no salgan demasiado grandes.
 \begin{document}
 \allsectionsfont{\normalsize}
@@ -39,6 +40,61 @@ El objetivo del artículo es ejemplificar como debe proyectarse un telesilla, bi
 \item Ramal ascendente descargado y descendente descargado.
 \end{enumerate}
 \end{itemize}
+El perfil del terreno que vamos a usar en nuestro ejemplo vendrá dado por 22 pares de puntos que nos generarán un perfil longitudinal del telesilla. Estos pares de puntos vienen dados en la siguiente tabla:\\
+\\
+\begin{table} \centering
+\begin{tabular}{|c|c|c|}
+\hline
+Perfil & Distancia al origen (m) & Cota (m)\\
+\hline
+0 & 0 & 0\\
+\hline
+1 & 25 & 2\\
+\hline
+2 & 50 & 10\\
+\hline
+3 & 75 & 20\\
+\hline
+4 & 100 & 30\\
+\hline
+5 & 125 & 38\\
+\hline
+6 & 150 & 45\\
+\hline
+7 & 175 & 55\\
+\hline
+8 & 200 & 65\\
+\hline
+9 & 225 & 75\\
+\hline
+10 & 250 & 85\\
+\hline
+11 & 275 & 95\\
+\hline
+12 & 300 & 103\\
+\hline
+13 & 325 & 110\\
+\hline
+14 & 350 & 108\\
+\hline
+15 & 375 & 105\\
+\hline
+16 & 400 & 98\\
+\hline
+17 & 425 & 92\\
+\hline
+18 & 450 & 90\\
+\hline
+19 & 475 & 100\\
+\hline
+20 & 500 & 115\\
+\hline
+21 & 525 & 130\\
+\hline
+22 & 550 & 150\\
+\hline
+\end{tabular}
+\end{table}
 Los cálculos detallados se realizarán solamente para la situación de ramal {\bf ascendente cargado,} en la hipótesis b), y ramal {\bf ascendente descargado,} en la hipótesis c).
 Vamos a considerar los siguientes resultados:
 \begin{enumerate}[1)]
@@ -56,6 +112,35 @@ Y para el {\bf ramal ascendente,} en ambas hipótesis:
 \item Ángulo de la resultante en cada apoyo.
 \end{enumerate}
 \part{Cálculos previos}
+A fin de hacer transitable el terreno bajo el telesilla, se considerará una altura de resguardo mínima de 3 m para todo el proyecto, tal y como viene indicado por la normativa en vigor. En las proximidades a las estaciones, sin embargo, este resguardo será imposible de alcanzar, por lo que deberá vallarse dicha zona de modo que se impida el tránsito de las personas y evitar así la ocurrencia de posibles accidentes. Este vallado deberá prolongarse el espacio que sea necesario hasta que se alcance el resguardo mínimo indicado. En los vanos correspondientes comentaremos la zona mínima a ser vallada por cuestiones de seguridad.\\
+\par Así mismo, la altura de las pilonas estará comprendida entre una altura mínima de 6,5 m, con objeto de poder conseguir dicho resguardo mínimo, y una altura máxima de 12,0 m, como viene fijada en la práctica por razones de explotación. En la medida de nuestras posibilidades, intentaremos que la altura de las distintas pilas sea lo más constante posible a lo largo de todo el recorrido, y que dicha altura esté alejada tanto de la altura mínima como de la altura máxima indicadas. Tanto en la estación superior como en la inferior la altura de la pila está fijada en 4,0 m.\\
+\par La instalación tendrá una capacidad de $C = 702~viajeros/hora$ . Para proporcionar dicho caudal de viajeros, y teniendo en cuenta de que se trata de una instalación de telesillas biplaza (de dos plazas para cada silla), el intervalo de tiempo que debe transcurrir entre dos sillas consecutivas debe ser de:
+\begin{displaymath}
+C=\frac{3600*n}{t} \Rightarrow t=\frac{3600*2}{702} = 10,26~sg > 8~sg
+\end{displaymath}
+como vemos se superan los 8~sg que establece como mínimo la normativa vigente para este tipo de instalaciones.\\
+\par Consideramos una velocidad de $v = 1,5~m/sg$, máxima velocidad permitida por la normativa para telesillas de panza fija y transporte de peatones. Según esa velocidad, la separación entre vehículos será de:
+\begin{displaymath}
+v=\frac{d}{t} \Rightarrow d=v*t = 1,5~m/sg * 10,26~sg = 15,39~m 
+\end{displaymath}
+\par La normativa nos permite considerar las cargas puntuales suponen cada uno de los vehículos (con o sin pasajeros) como una carga uniformemente distribuida a lo largo del cable, de modo que las sobrecargas lineales que utilizaremos en el dimensionamiento serán:\\
+\begin{itemize}
+\item Peso del vehículo = 60 kp
+\item Peso de dos viajeros = $2 viajeros * 80 kg/viajero = 160~kp$
+\item Peso de la silla completamente cargada = 220 kp.
+\item Peso de la silla descargada = 60 kp.
+\end{itemize}
+Así:
+\begin{itemize}
+\item Carga uniforme estando las sillas cargadas:
+\begin{displaymath}
+q_{cargada} = \frac{220}{15,39} = 14,3~kp/ml 
+\end{displaymath}
+\item Carga uniforme estando las sillas descargadas:
+\begin{displaymath}
+q_{descargada} = \frac{60}{15,39} = 3,9~kp/ml 
+\end{displaymath}
+\end{itemize}
 \part{Cálculos generales}
 \section{Hipótesis 1}
 \section{Hipótesis 2}
