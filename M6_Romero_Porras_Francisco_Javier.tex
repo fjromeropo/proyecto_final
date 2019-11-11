@@ -5,6 +5,7 @@
 \usepackage{enumerate}
 \usepackage{amssymb, amsmath, amsbsy}
 \usepackage{sectsty} %Este paquete se usa para poder cambiar el tamaño de las letras de los encabezados, y que no salgan demasiado grandes.
+\usepackage[pdftex]{graphicx}
 \begin{document}
 \allsectionsfont{\normalsize}
 \title{Cálculo de una instalación telesilla biplaza}
@@ -123,7 +124,7 @@ como vemos se superan los 8~sg que establece como mínimo la normativa vigente p
 \begin{displaymath}
 v=\frac{d}{t} \Rightarrow d=v*t = 1,5~m/sg * 10,26~sg = 15,39~m 
 \end{displaymath}
-\par La normativa nos permite considerar las cargas puntuales suponen cada uno de los vehículos (con o sin pasajeros) como una carga uniformemente distribuida a lo largo del cable, de modo que las sobrecargas lineales que utilizaremos en el dimensionamiento serán:\\
+\par La normativa nos permite considerar las cargas puntuales que suponen cada uno de los vehículos (con o sin pasajeros) como una carga uniformemente distribuida a lo largo del cable, de modo que las sobrecargas lineales que utilizaremos en el dimensionamiento serán:\\
 \begin{itemize}
 \item Peso del vehículo = 60 kp
 \item Peso de dos viajeros = $2 viajeros * 80 kg/viajero = 160~kp$
@@ -141,6 +142,36 @@ q_{cargada} = \frac{220}{15,39} = 14,3~kp/ml
 q_{descargada} = \frac{60}{15,39} = 3,9~kp/ml 
 \end{displaymath}
 \end{itemize}
+\par A partir del perfil del terreno, y según las consideraciones ya mencionadas, se estudiaron diversas alternativas tanto en la ubicación de los soportes como en la altura de los mismos. Se ha considerado una longitud máxima entre soportes de 100 m, y se ha procurado que todos los vanos, excepto uno a nuestra elección, tuvieran una longitud inferior a esos 100 m. De este modo vamos a poder controlar a nuestra elección cúal va a ser el vano más desfavorable, de modo que si conseguimos controlar la flecha en dicho vano, en principio no deberíamos tener problema alguno con las flechas resultantes en ningún otro vano, más aún teniendo en cuenta la intención inicial de que todos los soportes tuvieran la misma altura, dentro de lo posible.\\
+\par Para evitar problemas a la salida de la estación inferior se eligió el vano II como vano de mayor longitud y, por tanto, como {\em vano de control}. Finalmente, dada a la disposición del terreno, en vano VII también se ha considerado con una longitud de 100 m. Sin embargo, tal y como se verá durante el desarrollo de este ejemplo, en este último vano las tensiones van a ser superiores a las obtenidas para el vano II, por lo que las flechas resultantes serán inferiores. Además, en el vano VII se dispone de una mayor altura sobre el terreno en el punto central del vano respecto al vano II, lo que refuerza nuestra pretensión de escoger el vano II como vano más desfavorable en términos de flecha máxima admisible, o {\em vano de control.}\\
+\\
+Según estas consideraciones, la disposición final de los soportes vendrá dada en la siguiente tabla:\\
+\begin{table}[htbp] \centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Nª de pila & Cota (m) & Coordenada x de la pila (m) & Altura de la pila (m)\\
+\hline
+1 & 0 & 0 & 4\\
+\hline
+2 & 20 & 75 & 10\\
+\hline
+3 & 55 & 175 & 11\\
+\hline
+4 & 85 & 250 & 10\\
+\hline
+5 & 110 & 325 & 10\\
+\hline
+6 & 102 & 387,5 & 10\\
+\hline
+7 & 90 & 450 & 10\\
+\hline
+8 & 150 & 550 & 4\\
+\hline
+\end{tabular}
+\end{table}
+\\
+Al final del documento se adjunta una gráfica, figura \ref{perfil}, donde se muestra a escala tanto el perfil longitudinal del terreno como la disposición definitiva de cada una de las pilas, incluyendo la altura de las mismas.\\
+\\
 \part{Cálculos generales}
 \section{Hipótesis 1}
 \section{Hipótesis 2}
@@ -150,4 +181,10 @@ q_{descargada} = \frac{60}{15,39} = 3,9~kp/ml
 \section{Ramal ascendente cargado}
 \section{Ramal descendente cargado}
 \part{Perfil}
+\begin{figure}[h]
+\raggedright
+\includegraphics[scale=.8]{Perfil.jpg}
+\caption{Perfil final de la instalación, incluyendo la ubicación y altura de cada una de las pilonas que son necesarias en nuestra instalación.}
+\label{perfil}
+\end{figure}
 \end{document}
