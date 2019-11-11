@@ -1,0 +1,24 @@
+% Encoding: UTF-8
+
+@Article{BOE2002a,
+  author  = {Estado Español},
+  journal = {BOE 163 de 09/07/2002},
+  title   = {REAL DECRETO 596/2002, de 28 de junio, por el que se regulan los requisitos que deben cumplirse para la proyecci{\'o}n, construcci{\'o}n, puesta en servicio y explotaci{\'o}n de las instalaciones de transporte de personas por cable.},
+  year    = {2002},
+}
+
+@Article{Europea2016,
+  author  = {Uni{\'o}n Europea},
+  journal = {Diario Oficial de la Uni{\'o}n Europea},
+  title   = {REGLAMENTO (UE) 2016/424 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 9 de marzo de 2016 relativo a las instalaciones de transporte por cable y por el que se deroga la Directiva 2000/9/CE},
+  year    = {2016},
+}
+
+@Article{Europea2018,
+  author  = {Uni{\'o}n Europea},
+  journal = {Diario Oficial de la Uni{\'o}n Europea},
+  title   = {Comunicaci{\'o}n de la Comisi{\'o}n en el marco de la aplicaci{\'o}n del Reglamento (UE) 2016/424 del Parlamento Europeo y del Consejo relativo a las instalaciones de transporte por cable y por el que se deroga la Directiva 2000/9/CE},
+  year    = {2018},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

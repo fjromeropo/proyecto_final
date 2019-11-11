@@ -15,10 +15,10 @@
 Este es un trabajo que nos permite ver un ejemplo de como se debe proyectar un telesilla, de modalidad biplaza, de panza fija, para turistas no esquiadores. El trabajo se incluirá en el siguiente repositorio de git:\\
 \url{https://github.com/fjromeropo/proyecto_final}
 \end{abstract}
-\textbf{Palabras claves:} proyecto, telesilla, biplaza, pilona, cable, , perfil.
+\textbf{Palabras claves:} proyecto, telesilla, biplaza, pilona, cable, perfil.
 \tableofcontents
 \part{Introducción}
-El objetivo del artículo es ejemplificar como debe proyectarse un telesilla, biplaza, de panza fija, para turistas no esquiadores, entre dos puntos distantes 550 m y con un desnivel total de 150 m. Se considerarán, además, las siguientes características para hacer el dimensionado de la instalación:\\
+El objetivo del artículo es ejemplificar como debe proyectarse un telesilla biplaza, de panza fija, para turistas no esquiadores, entre dos puntos distantes 550 m y con un desnivel total de 150 m. Se considerarán, además, las siguientes características para hacer el dimensionado de la instalación:\\
 \begin{itemize}
 \item La capacidad de la instalación será de $C=702 viajeros/hora$
 \item La altura total de silla y pasajero es de 3.50 m
@@ -113,18 +113,18 @@ Y para el {\bf ramal ascendente,} en ambas hipótesis:
 \item Ángulo de la resultante en cada apoyo.
 \end{enumerate}
 \part{Cálculos previos}
-A fin de hacer transitable el terreno bajo el telesilla, se considerará una altura de resguardo mínima de 3 m para todo el proyecto, tal y como viene indicado por la normativa en vigor. En las proximidades a las estaciones, sin embargo, este resguardo será imposible de alcanzar, por lo que deberá vallarse dicha zona de modo que se impida el tránsito de las personas y evitar así la ocurrencia de posibles accidentes. Este vallado deberá prolongarse el espacio que sea necesario hasta que se alcance el resguardo mínimo indicado. En los vanos correspondientes comentaremos la zona mínima a ser vallada por cuestiones de seguridad.\\
+A fin de hacer transitable el terreno bajo el telesilla, se considerará una altura de resguardo mínima de 3 m para todo el proyecto, tal y como viene indicado por la normativa en vigor, \cite{BOE2002a}, \cite{Europea2016} y \cite{Europea2018}. En las proximidades a las estaciones, sin embargo, este resguardo será imposible de alcanzar, por lo que deberá vallarse dicha zona de modo que se impida el tránsito de las personas y evitar así la ocurrencia de posibles accidentes. Este vallado deberá prolongarse el espacio que sea necesario hasta que se alcance el resguardo mínimo indicado. En los vanos correspondientes comentaremos la zona mínima a ser vallada por cuestiones de seguridad.\\
 \par Así mismo, la altura de las pilonas estará comprendida entre una altura mínima de 6,5 m, con objeto de poder conseguir dicho resguardo mínimo, y una altura máxima de 12,0 m, como viene fijada en la práctica por razones de explotación. En la medida de nuestras posibilidades, intentaremos que la altura de las distintas pilas sea lo más constante posible a lo largo de todo el recorrido, y que dicha altura esté alejada tanto de la altura mínima como de la altura máxima indicadas. Tanto en la estación superior como en la inferior la altura de la pila está fijada en 4,0 m.\\
 \par La instalación tendrá una capacidad de $C = 702~viajeros/hora$ . Para proporcionar dicho caudal de viajeros, y teniendo en cuenta de que se trata de una instalación de telesillas biplaza (de dos plazas para cada silla), el intervalo de tiempo que debe transcurrir entre dos sillas consecutivas debe ser de:
 \begin{displaymath}
 C=\frac{3600*n}{t} \Rightarrow t=\frac{3600*2}{702} = 10,26~sg > 8~sg
 \end{displaymath}
-como vemos se superan los 8~sg que establece como mínimo la normativa vigente para este tipo de instalaciones.\\
+como vemos se superan los 8~sg que establece como mínimo la normativa vigente \cite{BOE2002a}, \cite{Europea2016} y \cite{Europea2018} para este tipo de instalaciones.\\
 \par Consideramos una velocidad de $v = 1,5~m/sg$, máxima velocidad permitida por la normativa para telesillas de panza fija y transporte de peatones. Según esa velocidad, la separación entre vehículos será de:
 \begin{displaymath}
 v=\frac{d}{t} \Rightarrow d=v*t = 1,5~m/sg * 10,26~sg = 15,39~m 
 \end{displaymath}
-\par La normativa nos permite considerar las cargas puntuales que suponen cada uno de los vehículos (con o sin pasajeros) como una carga uniformemente distribuida a lo largo del cable, de modo que las sobrecargas lineales que utilizaremos en el dimensionamiento serán:\\
+\par La normativa \cite{BOE2002a}, \cite{Europea2016} y \cite{Europea2018} nos permite considerar las cargas puntuales que suponen cada uno de los vehículos (con o sin pasajeros) como una carga uniformemente distribuida a lo largo del cable, de modo que las sobrecargas lineales que utilizaremos en el dimensionamiento serán:\\
 \begin{itemize}
 \item Peso del vehículo = 60 kp
 \item Peso de dos viajeros = $2 viajeros * 80 kg/viajero = 160~kp$
@@ -142,7 +142,7 @@ q_{cargada} = \frac{220}{15,39} = 14,3~kp/ml
 q_{descargada} = \frac{60}{15,39} = 3,9~kp/ml 
 \end{displaymath}
 \end{itemize}
-\par A partir del perfil del terreno, y según las consideraciones ya mencionadas, se estudiaron diversas alternativas tanto en la ubicación de los soportes como en la altura de los mismos. Se ha considerado una longitud máxima entre soportes de 100 m, y se ha procurado que todos los vanos, excepto uno a nuestra elección, tuvieran una longitud inferior a esos 100 m. De este modo vamos a poder controlar a nuestra elección cúal va a ser el vano más desfavorable, de modo que si conseguimos controlar la flecha en dicho vano, en principio no deberíamos tener problema alguno con las flechas resultantes en ningún otro vano, más aún teniendo en cuenta la intención inicial de que todos los soportes tuvieran la misma altura, dentro de lo posible.\\
+\par A partir del perfil del terreno, y según las consideraciones ya mencionadas, se estudiaron diversas alternativas tanto en la ubicación de los soportes como en la altura de los mismos. Se ha considerado una longitud máxima entre soportes de 100 m, y se ha procurado que todos los vanos, excepto uno a nuestra elección, tuvieran una longitud inferior a esos 100 m. De este modo vamos a poder controlar qué vano será el más desfavorable de modo que si conseguimos controlar la flecha en dicho vano, en principio no deberíamos tener problema alguno con las flechas resultantes en ningún otro vano, más aún teniendo en cuenta la intención inicial de que todos los soportes tuvieran la misma altura, dentro de lo posible.\\
 \par Para evitar problemas a la salida de la estación inferior se eligió el vano II como vano de mayor longitud y, por tanto, como {\em vano de control}. Finalmente, dada a la disposición del terreno, en vano VII también se ha considerado con una longitud de 100 m. Sin embargo, tal y como se verá durante el desarrollo de este ejemplo, en este último vano las tensiones van a ser superiores a las obtenidas para el vano II, por lo que las flechas resultantes serán inferiores. Además, en el vano VII se dispone de una mayor altura sobre el terreno en el punto central del vano respecto al vano II, lo que refuerza nuestra pretensión de escoger el vano II como vano más desfavorable en términos de flecha máxima admisible, o {\em vano de control.}\\
 \\
 Según estas consideraciones, la disposición final de los soportes vendrá dada en la siguiente tabla:\\
@@ -172,6 +172,7 @@ Nª de pila & Cota (m) & Coordenada x de la pila (m) & Altura de la pila (m)\\
 \\
 Al final del documento se adjunta una gráfica, figura \ref{perfil}, donde se muestra a escala tanto el perfil longitudinal del terreno como la disposición definitiva de cada una de las pilas, incluyendo la altura de las mismas.\\
 \\
+Utilizaremos el vano más desfavorable, el indicado vano II, para determinar el tipo de cable que necesitaremos en nuestra instalación:\\
 \part{Cálculos generales}
 \section{Hipótesis 1}
 \section{Hipótesis 2}
@@ -181,10 +182,14 @@ Al final del documento se adjunta una gráfica, figura \ref{perfil}, donde se mu
 \section{Ramal ascendente cargado}
 \section{Ramal descendente cargado}
 \part{Perfil}
-\begin{figure}[h]
+A continuación vemos una gráfica en papel milimetrado de como quedaría el diseño final de la instalación.\\
+\vspace{80mm}
+\begin{figure}
 \raggedright
-\includegraphics[scale=.8]{Perfil.jpg}
+\includegraphics[scale=.75]{Perfil.jpg}
 \caption{Perfil final de la instalación, incluyendo la ubicación y altura de cada una de las pilonas que son necesarias en nuestra instalación.}
 \label{perfil}
 \end{figure}
+\bibliography{Transporte_por_cable}
+\bibliographystyle{unsrt}
 \end{document}
